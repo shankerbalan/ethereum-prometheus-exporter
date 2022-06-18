@@ -51,7 +51,7 @@ func main() {
 
 	registry := prometheus.NewPedanticRegistry()
 	registry.MustRegister(
-		collector.NewNetPeerCount(rpc),
+		//collector.NewNetPeerCount(rpc),
 		collector.NewEthBlockNumber(rpc),
 		collector.NewEthBlockTimestamp(rpc),
 		collector.NewEthGasPrice(rpc),
@@ -60,7 +60,7 @@ func main() {
 		collector.NewEthPendingBlockTransactions(rpc),
 		collector.NewEthHashrate(rpc),
 		collector.NewEthSyncing(rpc),
-		collector.NewParityNetPeers(rpc),
+		//collector.NewParityNetPeers(rpc),
 	)
 
 	handler := promhttp.HandlerFor(registry, promhttp.HandlerOpts{
