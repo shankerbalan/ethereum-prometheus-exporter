@@ -1,4 +1,4 @@
-module github.com/31z4/ethereum-prometheus-exporter
+module github.com/shankerbalan/ethereum-prometheus-exporter
 
 require (
 	github.com/StackExchange/wmi v1.2.1 // indirect
